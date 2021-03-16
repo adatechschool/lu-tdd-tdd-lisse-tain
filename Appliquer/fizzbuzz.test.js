@@ -53,7 +53,7 @@ test('-2002 returns -2002', () => {
 });
 
 test('arbre returns input error', () => {
-    expect(fizzbuzz(arbre)).toBe("input error");
+    expect(fizzbuzz("arbre")).toBe("input error");
 });
 
 test('15.90 returns input error', () => {

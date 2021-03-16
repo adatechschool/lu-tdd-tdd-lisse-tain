@@ -4,10 +4,28 @@
 // on teste la divisibilité par 5, si oui print buzz
 
 function fizzbuzz(nombre) {
-  return nombre;
+  if (Number.isInteger(nombre)){
+    if (nombre % 15 === 0) {
+      return "fizzbuzz"
+    } else if (nombre % 5 === 0) {
+      return "buzz";
+    } else if (nombre % 3 === 0) {
+      return "fizz";
+    }
+    return nombre.toString();
+  } else {
+    return "input error";
+  }
 }
 
 function main() {
-  fizzbuzz(0);
+  let i = 0;
+  while (i <= 100) {
+    console.log(fizzbuzz(i));
+    i++;
+ }
 }
+
+main();
+
 module.exports = fizzbuzz;
