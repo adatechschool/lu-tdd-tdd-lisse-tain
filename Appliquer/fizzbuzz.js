@@ -10,3 +10,4 @@ function fizzbuzz(nombre) {
 function main() {
   fizzbuzz(0);
 }
+module.exports = fizzbuzz;
